@@ -151,7 +151,7 @@ button span {
   gap: 24px;
   list-style: none;
 }
-.about svg {
+.about-icons {
   width: 264px;
   height: 112px;
   background-color: #f4f4fd;
@@ -160,7 +160,7 @@ button span {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
-.about .icon-antenna {
+.icon {
   width: 64px;
   height: 64px;
 }
