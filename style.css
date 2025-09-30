@@ -67,20 +67,26 @@ ul {
   display: flex;
 }
 .navigation-list a {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation-list a:hover {
-  color: #404bbf;
-}
+
 .navigation-list a:active {
   color: #404bbf;
-  text-decoration: underline;
 }
-.navigation-list.active::after {
+.navigation-list a:focus::after {
+  position: absolute;
+  display: block;
+}
+.navigation-list a:hover::after {
+  position: absolute;
+  display: block;
   content: '';
   left: 0;
   bottom: -2px;
@@ -95,6 +101,7 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
   padding: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts a:hover {
   color: #404bbf;
@@ -137,6 +144,7 @@ ul {
   background-color: #4d5ae5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-hero button:hover {
   background-color: #404bbf;
@@ -253,6 +261,7 @@ button span {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .circle-icon:hover {
   background-color: #404bbf;
@@ -295,6 +304,7 @@ button span {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-portfolio li:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -415,6 +425,7 @@ button span {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-circle-icon:hover {
   background-color: #31d0aa;
